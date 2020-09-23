@@ -1,22 +1,22 @@
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\interfaces\IAlert.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\interfaces\IFactorValidator.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\services\fileHandler\FileValidator.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\interfaces\ILogger.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\services\environmentMonitor\TriggerAlarm.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\constants\EnvironmentConstants.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\sender\Sender.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\interfaces\IFileOperations.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\services\environmentMonitor\ReceiverReadData.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\interfaces\IFileValidator.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\services\environmentMonitor\EmailAlert.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\receiver\Receiver.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\test\java\com\philips\environmentMonitor\TriggerAlarmTest.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\interfaces\ITriggerAlarm.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\test\java\com\philips\environmentMonitor\ProcessSenderDataTest.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\services\environmentMonitor\Logger.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\services\environmentMonitor\ReportAlarm.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\services\fileHandler\FileOperations.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\services\environmentMonitor\MonitorEnvironmentCondition.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\services\environmentMonitor\SMSAlert.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\services\environmentMonitor\ProcessSenderData.java
-C:\Users\320105361\OneDrive - Philips\Documents\MavenCasestudy\environment-monitoring-master\src\main\java\com\philips\services\environmentMonitor\FactorValidator.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\services\fileHandler\FileValidator.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\services\environmentMonitor\FactorValidator.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\services\environmentMonitor\Logger.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\sender\Sender.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\services\environmentMonitor\SMSAlert.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\interfaces\ILogger.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\test\java\com\philips\environmentMonitor\TriggerAlarmTest.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\services\environmentMonitor\EmailAlert.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\interfaces\IFileValidator.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\receiver\Receiver.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\services\environmentMonitor\ReceiverReadData.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\services\environmentMonitor\ReportAlarm.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\services\fileHandler\FileOperations.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\services\environmentMonitor\TriggerAlarm.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\interfaces\IFileOperations.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\interfaces\ITriggerAlarm.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\services\environmentMonitor\ProcessSenderData.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\test\java\com\philips\environmentMonitor\FactorValidatorTest.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\constants\EnvironmentConstants.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\services\environmentMonitor\MonitorEnvironmentCondition.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\interfaces\IFactorValidator.java
+C:\Training and Assignments\Bootcamp\Case Study 1 [GitClassroom]\environment-case-s3b10\src\main\java\com\philips\interfaces\IAlert.java

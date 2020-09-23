@@ -42,48 +42,71 @@ public class ReceiverReadData {
 		try {
 			
 			fileOperations = new FileOperations(receiverInputPath);
-			fileValidate = new FileValidator(receiverInputPath, StringConstants.TEXT.get());
 			receiverLogger = new Logger(receiverLogsPath);
 			
-			if (!fileValidate.fileExists()) {
-				receiverLogger.logger(waitingForSender);
-				Thread.sleep(milliseconds); 
-			} 
+			validateFile();
 			
 			reader = fileOperations.openReaderStream();
 			fileOperations.readFile(reader);
 			setReceivedData(reader.readLine());
 			
 			while (reader!=null) {
-				
 				setWaitLimit(NumberConstants.ZERO.get());
-				while (receivedData == null) {
-					receiverLogger.logger(waitingForSender);
-					Thread.sleep(receiverWait);
-					setReceivedData(reader.readLine());
-					setWaitLimit(waitLimit + receiverWait);
-					
-					if (waitLimit >= NumberConstants.TIMEOUT.get()) {
-						System.out.println(LogMessageConstants.TIMEOUT.get());
-						fileOperations.closeReader(reader);
-						return;
-					}
-				}			
-				
+				waitForData(reader);
 				processData.processFileData(receivedData);
-				Thread.sleep(receiverWait);
+				sleep(receiverWait);
 				setReceivedData(reader.readLine());
 			}
-		} catch (InterruptedException | IOException exception) {
+		} catch (IOException exception) {
 			exception.printStackTrace();
 		}
 	}
 	
-	public void setReceivedData(String receivedData) {
+	private void validateFile() {
+		fileValidate = new FileValidator(receiverInputPath, StringConstants.TEXT.get());
+		if (!fileValidate.fileExists()) {
+			receiverLogger.logger(waitingForSender);
+			sleep(milliseconds);
+		} 
+	}
+	
+	private void sleep(int milliseconds) {
+		try {
+		Thread.sleep(milliseconds); 
+		} catch(InterruptedException exception) {
+			exception.printStackTrace();
+		}
+	}
+	
+	private void isWaitLimitExceeded()
+	{
+		if (waitLimit >= NumberConstants.TIMEOUT.get()) {
+			System.out.println(LogMessageConstants.TIMEOUT.get());
+			fileOperations.closeReader(reader);
+			System.exit(0);
+		}
+	}
+	
+	private void waitForData(BufferedReader reader) {
+		try {
+			while (receivedData == null) {
+				receiverLogger.logger(waitingForSender);
+				sleep(receiverWait);
+				setReceivedData(reader.readLine());
+				setWaitLimit(waitLimit + receiverWait);
+				isWaitLimitExceeded();
+					
+			}
+		} catch (IOException exception) {
+			exception.printStackTrace();
+		}
+	}
+	
+	private void setReceivedData(String receivedData) {
 		this.receivedData = receivedData;
 	}
 
-	public void setWaitLimit(int waitLimit) {
+	private void setWaitLimit(int waitLimit) {
 		this.waitLimit = waitLimit;
 	}
 }
